@@ -1,23 +1,69 @@
 aid: arunabiomedical
+
 name: Arunabiomedical
-description: 'Arunabiomedical is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Arunabiomedical, operating as Aruna Bio, is a privately held biotechnology company based in Athens, Georgia. It focuses on developing neural exosome therapeutics for neurological diseases, leveraging a proprietary platform to cross the blood‑brain barrier. The company offers research products and services derived from human stem cells, supporting drug discovery and basic research.'
+
 url: https://raw.githubusercontent.com/api-evangelist/arunabiomedical/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-26 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-26'
+
 modified: '2026-09-26'
+
 tags:
-- Company
-apis: []
+- Biotechnology
+- Neural Exosomes
+- Stem Cells
+- Research Services
+- Georgia
+- Healthcare
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/arunabiomedical-hosts.yml
+- type: Vendors
+  url: vendors/arunabiomedical-vendors.yml
+- type: TermsOfService
+  url: https://www.arunabio.com/terms
+- type: PrivacyPolicy
+  url: https://www.arunabio.com/privacy
+- type: Newsroom
+  url: https://www.arunabio.com/press
+- type: Leadership
+  url: https://www.arunabio.com/leadership
+- type: DomainSecurity
+  url: security/arunabiomedical-domain-security.yml
 - type: Website
-  url: https://equityzen.com/company/arunabiomedical
+  url: https://www.arunabio.com
+
+apis: []
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: No public API documentation or machine‑readable contract was found for Arunabiomedical.
+  evidence:
+    - url: https://api.arunabio.com/openapi.json
+      status: 000
+  checked: 2026-09-26
+x-enrichment:
+  date: '2026-09-26'
+  status: enriched
+  artifacts_added: 5
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
